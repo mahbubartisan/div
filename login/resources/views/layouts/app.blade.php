@@ -15,11 +15,16 @@
 
         <style>
             body {
-                background-color: #f8f9fa;
+                background-color: #f0f0f0;
             }
 
             .card {
-                border: none;
+                max-width: 400px;
+                margin: 50px auto;
+                background-color: #ffffff;
+                border:none;
+                border-radius: 5px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             }
 
             .card-title {

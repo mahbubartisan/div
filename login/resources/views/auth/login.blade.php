@@ -20,15 +20,19 @@
                     </a>
                 </div>
             </div>
-            <form method="POST" action="{{ route('login') }}">
+            <form method="POST" action="{{ route("login") }}">
                 @csrf
                 <div class="mb-3">
-                    <input type="text" class="form-control" id="username" name="username" placeholder="Username"
-                        required>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Username">
+                    @error("username")
+                        <div class="text-danger mb-3">{{ $message }}</div>
+                    @enderror
                 </div>
                 <div class="mb-3">
-                    <input type="password" id="password" name="password" class="form-control" placeholder="Password"
-                        required>
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Password">
+                    @error("password")
+                        <div class="text-danger mb-3">{{ $message }}</div>
+                    @enderror
                 </div>
                 <div class="d-flex justify-content-between align-items-center mb-3">
                     <div>
