@@ -34,6 +34,7 @@
                         <div class="text-danger mb-3">{{ $message }}</div>
                     @enderror
                 </div>
+                <button type="submit" class="btn custom-btn w-100 mb-3">Sign In</button>
                 <div class="d-flex justify-content-between align-items-center mb-3">
                     <div>
                         <input type="checkbox" id="remember">
@@ -41,7 +42,6 @@
                     </div>
                     <a href="#" class="text-decoration-none forgot">Forgot Password</a>
                 </div>
-                <button type="submit" class="btn custom-btn w-100">Sign In</button>
             </form>
             <div class="text-center mt-3">
                 <p class="mb-1">Not a member? <a href="#" class="text-decoration-none sign-text">
