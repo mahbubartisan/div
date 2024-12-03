@@ -59,12 +59,44 @@
                 color: #4b4c4c;
                 font-weight: 400
             }
+
+            .form-container {
+                max-width: 500px;
+                margin: 50px auto;
+                background-color: #ffffff;
+                padding: 20px 30px;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .form-header {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .form-header h3 {
+                color: #343a40;
+            }
+
+            .btn-primary {
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+                background-color: #007bff;
+                border-color: #007bff;
+            }
+
+            .btn-primary:hover {
+                background-color: #0056b3;
+                border-color: #004085;
+            }
         </style>
     </head>
 
     <body>
-        <div class="container d-flex justify-content-center align-items-center min-vh-100">
-            @yield('content')
+        {{-- <div class="container d-flex justify-content-center align-items-center"> --}}
+        <div class="justify-content-center align-items-center">
+            @yield("content")
         </div>
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>

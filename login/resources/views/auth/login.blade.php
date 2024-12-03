@@ -21,11 +21,14 @@
                 </div>
             </div>
             <form method="POST" action="{{ route('login') }}">
+                @csrf
                 <div class="mb-3">
-                    <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Username"
+                        required>
                 </div>
                 <div class="mb-3">
-                    <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Password"
+                        required>
                 </div>
                 <div class="d-flex justify-content-between align-items-center mb-3">
                     <div>
