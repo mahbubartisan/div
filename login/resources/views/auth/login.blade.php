@@ -12,11 +12,11 @@
                     Sign In
                 </h5>
                 <div class="d-flex">
-                    <a href="#" class="text-decoration-none me-2">
-                        <i class="fab fa-facebook-f text-primary"></i>
+                    <a href="#" class="icon-wrapper me-2">
+                        <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="#" class="text-decoration-none">
-                        <i class="fab fa-twitter text-info"></i>
+                    <a href="#" class="icon-wrapper">
+                        <i class="fab fa-twitter"></i>
                     </a>
                 </div>
             </div>
