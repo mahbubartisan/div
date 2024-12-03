@@ -9,11 +9,11 @@ Route::get('/', [LoginController::class, 'showLoginForm']);
 Route::post('/login', [LoginController::class, 'login'])->name('login');
 
 Route::middleware(['auth'])->group(function () {
-    // Route::get('/add-user', [UserController::class, 'create']);
-    Route::post('/add-user', [UserController::class, 'store']);
-});
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware('auth');
+    // Add User Routes
+    Route::post('/add-user', [UserController::class, 'store'])->name('add-user');
 
-Route::post('/add-user', [UserController::class, 'store']);
+    // Dashboard Route
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    });
+});

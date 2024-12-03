@@ -2,17 +2,23 @@
 
 @section("content")
     <div class="form-container">
+        @if (session("success"))
+            <div class="alert alert-success">
+                {{ session("success") }}
+            </div>
+        @endif
         <div class="form-header">
             <h3>Add New User</h3>
         </div>
-        <form>
+        <form action="{{ route('add-user') }}" method="POST">
+                @csrf
             <div class="mb-3">
-                <label for="userName" class="form-label">Full Name</label>
-                <input type="text" class="form-control" id="userName" placeholder="Enter full name" required>
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
             </div>
             <div class="mb-3">
-                <label for="userPassword" class="form-label">Password</label>
-                <input type="password" class="form-control" id="userPassword" placeholder="Enter password" required>
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
             </div>
             <button type="submit" class="btn btn-primary">Create</button>
         </form>
