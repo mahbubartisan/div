@@ -23,41 +23,36 @@
             }
 
             .card-title {
-                font-weight: 400;
-                color: #868585 font-size: 1.25rem;
+                font-weight: bold;
+                font-size: 1.25rem;
             }
 
             .custom-btn {
-                background-color: #1acd81;
+                background-color: #28a745;
                 color: white;
                 border: none;
                 padding: 10px;
                 font-size: 16px;
-                font-weight: 500;
                 border-radius: 5px;
                 transition: background-color 0.3s ease;
             }
 
             .custom-btn:hover {
-                background-color: #43e5a0;
-                color: #ffffff;
+                background-color: #218838;
             }
 
-            .sign-text {
-                color: #1acd81;
-                font-size: 16px;
-                font-weight: 400;
+            .fab {
+                font-size: 1.2rem;
             }
 
-            .remember {
-                color: #1acd81;
-                font-size: 16px;
-                font-weight: 400;
+            .fab:hover {
+                transform: scale(1.1);
+                transition: transform 0.2s ease-in-out;
             }
 
-            .forgot {
-                color: #4b4c4c;
-                font-weight: 400
+            .fas {
+                font-size: 1.5rem;
+                color: #28a745;
             }
         </style>
     </head>
@@ -66,13 +61,13 @@
         <div class="container d-flex justify-content-center align-items-center min-vh-100">
             <div class="card shadow-sm" style="width: 350px; border-radius: 15px;">
                 <div class="card-img-top">
-                    <img src="https://www.oecd.org/adobe/dynamicmedia/deliver/dm-aid--7d8b260a-479a-4772-83db-6677a343072f/ocean-shutterstock-2285024411.jpg?preferwebp=true&quality=80"
-                        alt="Top Image" class="w-100 rounded-top" style="height: 150px; object-fit: cover;">
+                    <img src="https://via.placeholder.com/350x150" alt="Top Image" class="w-100 rounded-top"
+                        style="height: 150px; object-fit: cover;">
                 </div>
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center mb-4">
                         <h5 class="card-title mb-0 d-flex align-items-center">
-                            Sign In
+                            <i class="fas fa-user-circle me-2" style="color: #28a745;"></i> Sign In
                         </h5>
                         <div class="d-flex">
                             <a href="#" class="text-decoration-none me-2">
@@ -93,15 +88,14 @@
                         <div class="d-flex justify-content-between align-items-center mb-3">
                             <div>
                                 <input type="checkbox" id="rememberMe">
-                                <label for="rememberMe" class="form-check-label remember">Remember Me</label>
+                                <label for="rememberMe" class="form-check-label">Remember Me</label>
                             </div>
-                            <a href="#" class="text-decoration-none forgot">Forgot Password</a>
+                            <a href="#" class="text-decoration-none">Forgot Password</a>
                         </div>
                         <button type="submit" class="btn custom-btn w-100">Sign In</button>
                     </form>
                     <div class="text-center mt-3">
-                        <p class="mb-1">Not a member? <a href="#" class="text-decoration-none sign-text">Sign
-                                Up</a></p>
+                        <p class="mb-1">Not a member? <a href="#" class="text-decoration-none">Sign Up</a></p>
                     </div>
                 </div>
             </div>
